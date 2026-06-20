@@ -1,9 +1,15 @@
-<!-- docs: sync from coderbuzz/codex@cd4a13b -->
+<!-- docs: sync from coderbuzz/codex@46af4b9 -->
 
 # Ryu &mdash; `@coderbuzz/ryu`
 
 > **Simple reactive signals for TypeScript.** No framework. No dependencies. No complexity.
 > AI agents: see [AI_KNOWLEDGE.md](https://github.com/coderbuzz/ryu/blob/main/AI_KNOWLEDGE.md) for expert context.
+<p align="center">
+  <a href="https://www.npmjs.com/package/@coderbuzz/ryu"><img src="https://img.shields.io/npm/v/@coderbuzz/ryu.svg?style=flat-square" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/@coderbuzz/ryu"><img src="https://img.shields.io/npm/dm/@coderbuzz/ryu.svg?style=flat-square" alt="npm downloads" /></a>
+  <a href="https://github.com/coderbuzz/ryu/blob/main/LICENSE"><img src="https://img.shields.io/github/license/coderbuzz/ryu.svg?style=flat-square" alt="MIT License" /></a>
+  <a href="https://github.com/coderbuzz/ryu"><img src="https://img.shields.io/github/stars/coderbuzz/ryu.svg?style=flat-square" alt="GitHub Stars" /></a>
+</p>
 
 Ryu is a portable, framework-agnostic reactive state primitive that works in **Node.js, Bun, Deno, and browsers**. If you need observable state without pulling in RxJS, MobX, or a full framework — Ryu is your answer.
 
