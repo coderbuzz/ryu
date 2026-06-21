@@ -1,4 +1,4 @@
-<!-- docs: sync from coderbuzz/codex@46af4b9 -->
+<!-- docs: sync from coderbuzz/codex@e5210d1 -->
 
 # Ryu &mdash; `@coderbuzz/ryu`
 
@@ -9,6 +9,8 @@
   <a href="https://www.npmjs.com/package/@coderbuzz/ryu"><img src="https://img.shields.io/npm/dm/@coderbuzz/ryu.svg?style=flat-square" alt="npm downloads" /></a>
   <a href="https://github.com/coderbuzz/ryu/blob/main/LICENSE"><img src="https://img.shields.io/github/license/coderbuzz/ryu.svg?style=flat-square" alt="MIT License" /></a>
   <a href="https://github.com/coderbuzz/ryu"><img src="https://img.shields.io/github/stars/coderbuzz/ryu.svg?style=flat-square" alt="GitHub Stars" /></a>
+  <a href="https://github.com/coderbuzz/codex/actions/workflows/ci.ryu.yml"><img src="https://github.com/coderbuzz/codex/actions/workflows/ci.ryu.yml/badge.svg" alt="CI" /></a>
+  <a href="https://codecov.io/gh/coderbuzz/codex"><img src="https://codecov.io/gh/coderbuzz/codex/graph/badge.svg?flag=ryu" alt="Codecov" /></a>
 </p>
 
 Ryu is a portable, framework-agnostic reactive state primitive that works in **Node.js, Bun, Deno, and browsers**. If you need observable state without pulling in RxJS, MobX, or a full framework — Ryu is your answer.
