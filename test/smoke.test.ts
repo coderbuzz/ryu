@@ -10,9 +10,8 @@ test("signal get/set", () => {
 
 test("signal subscribe", () => {
   const s = signal("hello");
-  let called = 0;
-  s.subscribe(() => { called++; });
+  const values: string[] = [];
+  s.subscribe(v => values.push(v));
   s.set("world");
-  expect(called).toBe(1);
-  expect(s.get()).toBe("world");
+  expect(values).toEqual(["hello", "world"]);
 });
