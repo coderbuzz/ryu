@@ -1,5 +1,5 @@
 import { test, expect } from "bun:test";
-import { signal } from "@coderbuzz/ryu";
+import { signal } from "../src/index";
 
 test("signal get/set", () => {
   const s = signal(0);
