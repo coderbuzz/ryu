@@ -1,0 +1,12 @@
+{
+  "name": "@coderbuzz/ryu-ci",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@coderbuzz/ryu": "latest",
+    "@coderbuzz/veta": "latest"
+  }
+}
