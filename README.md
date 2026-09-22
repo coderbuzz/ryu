@@ -1,4 +1,4 @@
-<!-- docs: sync from coderbuzz/codex@e9b6bce -->
+<!-- docs: sync from coderbuzz/codex@7d74651 -->
 
 # Ryu &mdash; `@coderbuzz/ryu`
 
@@ -13,7 +13,7 @@
   <a href="https://codecov.io/gh/coderbuzz/ryu"><img src="https://codecov.io/gh/coderbuzz/ryu/graph/badge.svg" alt="Codecov" /></a>
 </p>
 
-Ryu is a portable, framework-agnostic reactive state primitive that works in **Node.js, Bun, Deno, and browsers**. If you need observable state without pulling in RxJS, MobX, or a full framework — Ryu is your answer.
+Ryu is a portable, framework-agnostic reactive state primitive that works in **Node.js, Bun, Deno, and browsers** — observable state without pulling in RxJS, MobX, or a full framework.
 
 ---
 
