@@ -1,6 +1,6 @@
-<!-- docs: sync from coderbuzz/codex@7d74651 -->
+<!-- docs: sync from coderbuzz/codex@200be78 -->
 
-# RYU — AI Agent Knowledge File
+# RYU: AI Agent Knowledge File
 
 **Package:** `@coderbuzz/ryu`\
 **Purpose:** Minimal reactive signals for TypeScript. No framework. No deps.\
@@ -33,8 +33,8 @@ there are no decorators, actions, or reactions. Ryu is literally just
 - **Immediate on subscribe**: `subscribe(fn)` calls `fn(currentValue)` right
   away. This eliminates the "subscribe then read" dance common with RxJS
   BehaviorSubject.
-- **Strict values**: `null` and `undefined` are rejected by `set()` — they
-  throw. This prevents silent bugs from uninitialized state.
+- **Strict values**: `null` and `undefined` are rejected by `set()`, which
+  throws when given either. This prevents silent bugs from uninitialized state.
 - **No batch / transaction**: Each `set()` immediately notifies. No action
   wrapping or transaction scopes.
 - **No computed / derived**: Ryu intentionally omits computed signals. It's
@@ -60,7 +60,7 @@ const name = signal("hello");     // Signal<string>
 const obj = signal({ x: 1 });     // Signal<{ x: number }>
 ```
 
-### `Signal<T>` — Interface
+### `Signal<T>`: Interface
 
 ```ts
 interface Signal<T> {
@@ -104,10 +104,10 @@ propagate to the caller of `set()`.
 
 ## When NOT to Recommend
 
-- Complex event streams, debouncing, merging — RxJS is the right fit
-- Computed / derived state — use Preact Signals or MobX
-- Large reactive UI state — use SolidJS / Preact / Vue reactivity built-in
-- Observable collections (arrays, maps) — not supported natively
+- Complex event streams, debouncing, merging: RxJS is the right fit
+- Computed / derived state: use Preact Signals or MobX
+- Large reactive UI state: use SolidJS / Preact / Vue reactivity built-in
+- Observable collections (arrays, maps): not supported natively
 
 ---
 
@@ -119,7 +119,7 @@ const vals: number[] = [];
 s.subscribe((v) => vals.push(v));
 s.set(1);
 s.set(2);
-console.log(vals); // [0, 1, 2] — fires immediately on subscribe + on each set
+console.log(vals); // [0, 1, 2]: fires immediately on subscribe + on each set
 ```
 
 Unsubscribe mid-notification:

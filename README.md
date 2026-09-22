@@ -1,6 +1,6 @@
-<!-- docs: sync from coderbuzz/codex@7d74651 -->
+<!-- docs: sync from coderbuzz/codex@200be78 -->
 
-# Ryu &mdash; `@coderbuzz/ryu`
+# Ryu: `@coderbuzz/ryu`
 
 > **Simple reactive signals for TypeScript.** No framework. No dependencies. No complexity.
 > AI agents: see [AI_KNOWLEDGE.md](https://github.com/coderbuzz/ryu/blob/main/AI_KNOWLEDGE.md) for expert context.
@@ -13,7 +13,7 @@
   <a href="https://codecov.io/gh/coderbuzz/ryu"><img src="https://codecov.io/gh/coderbuzz/ryu/graph/badge.svg" alt="Codecov" /></a>
 </p>
 
-Ryu is a portable, framework-agnostic reactive state primitive that works in **Node.js, Bun, Deno, and browsers** — observable state without pulling in RxJS, MobX, or a full framework.
+Ryu is a portable, framework-agnostic reactive state primitive that works in **Node.js, Bun, Deno, and browsers**, providing observable state without pulling in RxJS, MobX, or a full framework.
 
 ---
 
@@ -21,13 +21,13 @@ Ryu is a portable, framework-agnostic reactive state primitive that works in **N
 
 | Pain Point | RxJS | MobX | Preact Signals | **Ryu** |
 |---|---|---|---|---|
-| Learning curve | Steep — operators, subjects, schedulers | Moderate — decorators, actions, reactions | Moderate — computed, effect, batch | **Minimal** — `get()`, `set()`, `subscribe()` |
+| Learning curve | Steep: operators, subjects, schedulers | Moderate: decorators, actions, reactions | Moderate: computed, effect, batch | **Minimal**: `get()`, `set()`, `subscribe()` |
 | Bundle size | ~40 KB gzip | ~30 KB gzip | ~5 KB gzip | **<1 KB gzip** |
 | Dependencies | Many (symbol-observable, tslib) | None | Preact | **Zero** |
-| Runtime support | All (polyfill needed for old browsers) | All | Browser-focused | **All** — Node, Deno, Bun, browsers |
-| Immediate notification on subscribe | Custom behavior needed | Manual reaction | Default | **Built-in** — fires immediately with current value |
-| Strict null/undefined rejection | No | No | No | **Yes** — prevents silent bugs |
-| TypeScript | Good | Limited | Good | **Full** — generic `signal<T>()` |
+| Runtime support | All (polyfill needed for old browsers) | All | Browser-focused | **All**: Node, Deno, Bun, browsers |
+| Immediate notification on subscribe | Custom behavior needed | Manual reaction | Default | **Built-in**: fires immediately with current value |
+| Strict null/undefined rejection | No | No | No | **Yes**: prevents silent bugs |
+| TypeScript | Good | Limited | Good | **Full**: generic `signal<T>()` |
 
 Ryu is not trying to replace RxJS for complex event streams. It's the **simple, predictable alternative** for when you just need observable state with zero overhead.
 
@@ -35,14 +35,14 @@ Ryu is not trying to replace RxJS for complex event streams. It's the **simple, 
 
 ## Features
 
-- **`signal<T>()`** — create a typed reactive value with `get`, `set`, and `subscribe`
-- **Immediate notification** — subscribers are called with the current value on subscription
-- **Automatic cleanup** — `subscribe` returns an unsubscribe function
-- **Multiple subscribers** — independent listeners each receive updates
-- **Strict values** — `null` and `undefined` are rejected to prevent silent bugs
-- **Runtime agnostic** — works in Node.js, Bun, Deno, and browsers
-- **Zero dependencies** — just 1 KB of pure TypeScript
-- **No decorators** — plain functions, plain generics
+- **`signal<T>()`**: create a typed reactive value with `get`, `set`, and `subscribe`
+- **Immediate notification**: subscribers are called with the current value on subscription
+- **Automatic cleanup**: `subscribe` returns an unsubscribe function
+- **Multiple subscribers**: independent listeners each receive updates
+- **Strict values**: `null` and `undefined` are rejected to prevent silent bugs
+- **Runtime agnostic**: works in Node.js, Bun, Deno, and browsers
+- **Zero dependencies**: just 1 KB of pure TypeScript
+- **No decorators**: plain functions, plain generics
 
 ---
 
@@ -83,7 +83,7 @@ count.set(2);
 
 unsubscribe();
 count.set(3);
-// (no log — listener was removed)
+// (no log: listener was removed)
 ```
 
 ---
@@ -171,11 +171,11 @@ currentUser.subscribe((user) => {
 const config = signal({ debug: false, timeout: 5000 });
 
 config.subscribe(({ debug, timeout }) => {
-  console.log(`Config updated — debug: ${debug}, timeout: ${timeout}ms`);
+  console.log(`Config updated, debug: ${debug}, timeout: ${timeout}ms`);
 });
 
 config.set({ debug: true, timeout: 10000 });
-// → "Config updated — debug: true, timeout: 10000ms"
+// → "Config updated, debug: true, timeout: 10000ms"
 ```
 
 ### Cross-Module Communication
